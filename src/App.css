@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -27,6 +33,12 @@
 .App-link {
   color: #61dafb;
 }
+
+/* custom css start */
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+/* custom css end */
 
 @keyframes App-logo-spin {
   from {

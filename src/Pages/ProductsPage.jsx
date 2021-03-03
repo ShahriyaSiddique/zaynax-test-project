@@ -4,16 +4,20 @@ import Pagination from "../Component/Pagination";
 import Products from "../Component/Products";
 
 export default function ProductsPage() {
-  console.log(ProductsList.length);
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(5);
 
+  // Get current Products
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = ProductsList.slice(
     indexOfFirstProduct,
     indexOfLastProduct
   );
+
+  // Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <>
       <section style={{ padding: "0 30px" }}>
@@ -26,6 +30,8 @@ export default function ProductsPage() {
             <Pagination
               productsPerPage={productsPerPage}
               totalproducts={ProductsList.length}
+              paginate={paginate}
+              currentPage={currentPage}
             />
           </div>
         </div>

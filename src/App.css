@@ -38,6 +38,20 @@
 .text-decoration-line-through {
   text-decoration: line-through;
 }
+
+.current-page {
+  background: #00b55b;
+  border-radius: 50%;
+}
+.next-btn,
+.next-btn:hover {
+  color: #00b55b;
+}
+
+.current-page a {
+  color: white !important;
+}
+
 /* custom css end */
 
 @keyframes App-logo-spin {

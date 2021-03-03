@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProductsList from "../Assets/.data/productsConstant";
+import Footer from "../Component/Footer";
 import Pagination from "../Component/Pagination";
 import Products from "../Component/Products";
 
@@ -20,7 +21,7 @@ export default function ProductsPage() {
 
   return (
     <>
-      <section style={{ padding: "0 30px" }}>
+      <section style={{ width: "90%" }} className="mx-auto">
         <div className="row">
           <div className="col-3"></div>
           <div className="col-9">
@@ -36,6 +37,8 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }

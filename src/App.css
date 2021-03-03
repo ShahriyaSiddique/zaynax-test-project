@@ -35,6 +35,11 @@
 }
 
 /* custom css start */
+
+.min-content {
+  width: min-content;
+}
+
 .text-decoration-line-through {
   text-decoration: line-through;
 }
@@ -50,6 +55,48 @@
 
 .current-page a {
   color: white !important;
+}
+
+.footer-menu a,
+.footer-menu a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.payment-method img {
+  width: 38px;
+  transform: scale(1.1);
+}
+.subscribe input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #00b55b;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 8px 0;
+  border: solid #2b2b2b;
+  border-width: 0 0 1px;
+  position: relative;
+}
+
+.subscribe button {
+  top: 110px;
+  right: 83px;
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+.contact-us ul {
+  list-style-type: none;
+}
+
+.contact-us span {
+  font-weight: bold;
 }
 
 /* custom css end */

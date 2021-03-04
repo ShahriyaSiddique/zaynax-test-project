@@ -1,9 +1,4 @@
 import React from "react";
-import img1 from "../Assets/img/asset-4.png";
-import img2 from "../Assets/img/asset-5.png";
-import img3 from "../Assets/img/asset-6.png";
-import img4 from "../Assets/img/asset-7.png";
-
 export default function Product({
   title,
   currentPrice,
@@ -11,23 +6,6 @@ export default function Product({
   discount,
   img,
 }) {
-  let productImg;
-  switch (img) {
-    case 1:
-      productImg = img1;
-      break;
-    case 2:
-      productImg = img2;
-      break;
-    case 3:
-      productImg = img3;
-      break;
-    case 4:
-      productImg = img4;
-      break;
-    default:
-    // code block
-  }
   return (
     <>
       <div className="col-3 p-1">
@@ -35,7 +13,9 @@ export default function Product({
           className="d-flex flex-column border px-3"
           style={{ borderRadius: "15px", maxWidth: "97%" }}
         >
-          <img className="mx-auto" width="200" alt="" />
+          <div style={{ minHeight: "245px" }}>
+            <img src={img} className="mx-auto" width="200" alt="" />
+          </div>
           <h5 className="pb-2">{title}</h5>
           {/* {title.length < 31 ? <br /> : ""} */}
 

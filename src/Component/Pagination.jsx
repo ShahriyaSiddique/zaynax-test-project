@@ -13,7 +13,7 @@ const Pagination = ({
   }
   return (
     <div
-      className="px-4 py-3 d-flex border border-light shadow-sm rounded-pill justify-content-center align-items-center mx-auto"
+      className="px-4 py-3 mt-4 d-flex border border-light shadow-sm rounded-pill justify-content-center align-items-center mx-auto"
       style={{ width: "min-content" }}
     >
       {pageNumbers.map((number) => (

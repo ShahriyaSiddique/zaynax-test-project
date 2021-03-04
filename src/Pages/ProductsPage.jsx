@@ -5,10 +5,11 @@ import Pagination from "../Component/Pagination";
 import Products from "../Component/Products";
 import searchBtn from "../Assets/img/search.png";
 import Filter from "../Component/Filter";
+import WhyUs from "../Component/WhyUs";
 
 export default function ProductsPage() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(10);
+  const [productsPerPage] = useState(28);
 
   // Get current Products
   const indexOfLastProduct = currentPage * productsPerPage;
@@ -106,6 +107,8 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
+
+      <WhyUs />
 
       <Footer />
     </>

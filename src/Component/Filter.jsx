@@ -13,6 +13,7 @@ import Size from "./Size";
 import Color from "./Color";
 import Rating from "./Rating";
 import AllFilters from "./AllFilters";
+import Price from "./Price";
 
 export default function Filter() {
   return (
@@ -36,6 +37,7 @@ export default function Filter() {
       <Size />
       <Color />
       <FilterCommon name="Discount" items={discountList} show={true} />
+      <Price />
       <Rating />
       <FilterCommon name="Fabric" items={fabricList} more="5" show={true} />
       <FilterCommon name="Pattern" items={patternList} more="26" show={true} />

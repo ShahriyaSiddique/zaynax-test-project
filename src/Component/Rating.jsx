@@ -8,7 +8,7 @@ export default function Rating() {
 
   return (
     <div
-      className={`filterCommon mt-3`}
+      className={`filterCommon mt-3 rating`}
       style={{ borderTop: "2px black dashed", cursor: "pointer" }}
     >
       <div
@@ -16,30 +16,24 @@ export default function Rating() {
         onClick={() => setvisibility(!visibility)}
       >
         <h5>Rating</h5>
-        <FontAwesomeIcon icon={faAngleDown} size="2x" />
       </div>
 
-      {visibility ? (
-        <div className={`filterCommon px-3`}>
-          <div
-            style={{ height: "150px", overflowY: "scroll" }}
-            className="scrollbar"
-          >
-            <ul>
-              {ratingList.map((item, index) => (
-                <li key={index}>
-                  <input
-                    name={item}
-                    type="checkbox"
-                    className="checkbox-round mr-2"
-                  ></input>
-                  <label htmlFor={item}>{item}</label>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className={`filterCommon px-3`}>
+        <div>
+          <ul>
+            {ratingList.map((item, index) => (
+              <li key={index}>
+                <input
+                  name={item}
+                  type="checkbox"
+                  className="checkbox-round mr-2"
+                ></input>
+                <label htmlFor={item}>{item}</label>
+              </li>
+            ))}
+          </ul>
         </div>
-      ) : null}
+      </div>
     </div>
   );
 }

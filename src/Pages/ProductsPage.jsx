@@ -43,7 +43,7 @@ export default function ProductsPage() {
               <span className="pr-3">Refine By</span>
               <span className="pr-3">|</span>
               <span>
-                <select>
+                <select className="border-0">
                   <option selected value="price">
                     Price
                   </option>
@@ -59,7 +59,7 @@ export default function ProductsPage() {
               <span className="pr-3">Sort by</span>
               <span className="pr-3">|</span>
               <span>
-                <select>
+                <select className="border-0">
                   <option selected value="bestsellers">
                     Best Sellers
                   </option>

@@ -7,7 +7,7 @@ export default function Product({ title, currentPrice, oldPrice, discount }) {
       <div className="col-3 p-1">
         <div
           className="d-flex flex-column border px-4"
-          style={{ borderRadius: "15px" }}
+          style={{ borderRadius: "15px", maxWidth: "97%" }}
         >
           <img className="mx-auto" width="200" src={img} alt="" />
           <h5 className="pr-4 pb-2">{title}</h5>

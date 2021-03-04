@@ -92,7 +92,8 @@
 }
 
 .contact-us ul,
-.rating ul {
+.rating ul,
+.filterCommon ul {
   list-style-type: none;
 }
 

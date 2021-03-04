@@ -3,7 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import searchBtn from "../Assets/img/search.png";
 
-export default function FilterCommon({ name, items, more, search, show }) {
+export default function FilterCommon({
+  name,
+  items,
+  more,
+  search,
+  show,
+  scrollbar,
+}) {
   const [visibility, setvisibility] = useState(show);
 
   return (
@@ -41,7 +48,7 @@ export default function FilterCommon({ name, items, more, search, show }) {
             </div>
           ) : null}
           <div
-            style={{ height: "150px", overflowY: "scroll" }}
+            style={{ height: "150px", overflowY: scrollbar ? "scroll" : "" }}
             className="scrollbar"
           >
             <ul>
